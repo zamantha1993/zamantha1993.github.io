@@ -33,7 +33,7 @@
   }
   .foto img {
     width: 12vw;
-    height: 40vh;
+    height: 25vh;
     border-radius: 1.5em;
     box-shadow:rgb(0,0,0) 10px 11px 10px;
     -moz-box-shadow:rgb(0,0,0) 10px 11px 10px;
@@ -110,7 +110,7 @@
   @media only screen and (max-width:1500px){
     .foto img{
       width: 15vw;
-      height: 40vh;
+      height: 25vh;
       border-radius: 1em;
     }
     .container{
@@ -131,7 +131,7 @@
   @media only screen and (max-width:1007px){
     .foto img{
       width: 19vw;
-      height: 40vh;
+      height: 25vh;
       border-radius: 2em;
     }
     .imagenesfooter img {
