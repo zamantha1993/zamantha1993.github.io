@@ -10,10 +10,10 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    min-width:660px;
   }
   .agrupar {
     background-image: url("imagenes_hbdy/fondoh1header.jfif");
-    width:100%;
   }
   .video {
     position:absolute;
@@ -32,23 +32,17 @@
     margin: 0.5em 0;
   }
   .foto img {
-    width: 220px;
+    width: 221px;
     height: 220px;
     border-radius: 1.5em;
     box-shadow:rgb(0,0,0) 10px 11px 10px;
     -moz-box-shadow:rgb(0,0,0) 10px 11px 10px;
     -webkit-box-shadow:rgb(0,0,0) 10px 11px 10px;
-  }
-  .container,
-  .parrafo {
-    width:960px;
-    margin: 0.5em auto;
+    margin: 1em 0.5em;
   }
   .container{
-    display: flex;
-    flex-wrap: wrap; 
-    place-content: center;
-    gap:1.5em;
+    display: inline-block;
+    column-count: 5; 
   }
 
   .h1fotos{
@@ -67,6 +61,11 @@
     -moz-font: 0.9em solid verdana, sans-serif;
     -webkit-font: 0.9em solid verdana, sans-serif; 
   }
+  .parrafo{
+    width:960px;
+    margin: 0 auto;
+  }
+
   .imagenesfooter {
     display:flex;
     justify-content: space-evenly; 
@@ -104,3 +103,48 @@
     -moz-text-shadow:rgb(0,0,0) 10px 10px 10px;
     -webkit-text-shadow:rgb(0,0,0) 10px 10px 10px
   }
+
+  /* MEDIA */
+
+  @media only screen and (max-width:1500px){
+    .foto img{
+      width: 200px;
+      height: 200px;
+      border-radius: 1em;
+    }
+    .container{
+      column-count: 4;
+    }
+    .imagenesfooter img {
+      width: 7em;
+      border-radius: 2em;
+    }
+    *{
+      font-size:20px;
+    }
+    .parrafo{
+      width:850px;
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (max-width:1007px){
+    .foto img{
+      width: 180px;
+      height: 180px;
+      border-radius: 1em;
+    }
+    .imagenesfooter img {
+      width: 5em;
+      border-radius: 2em;
+    }
+    *{
+      font-size:18px;
+    }
+    .container{
+      column-count: 3;
+    }
+    .parrafo{
+      width:600px;
+      margin: 0 auto;
+    }
+}
