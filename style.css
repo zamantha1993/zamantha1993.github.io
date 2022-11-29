@@ -12,19 +12,17 @@
     -webkit-box-sizing: border-box;
   }
   .agrupar {
-    width: 960px;
-    margin: 10px auto;
-    background: url("imagenes_hbdy/fondoh1header.jfif");
+    background-image: url("imagenes_hbdy/fondoh1header.jfif");
+    width:100%;
   }
-  
+  .video {
+    position:absolute;
+    z-index:-1;
+  }
   .cabecerah1{
     font-size: 4em;
     font-style: italic;
-    color: gold;
-    margin-bottom: 0.1em;
-    text-shadow: rgb(0,0,0) 10px 10px 10px;
-    -moz-text-shadow: rgb(0,0,0) 10px 10px 10px;
-    -webkit-text-shadow: rgb(0,0,0) 10px 10px 10px;
+    color: gold; 
   }
   .reina {
     display: block;
@@ -37,16 +35,22 @@
     width: 220px;
     height: 220px;
     border-radius: 1.5em;
-    margin: 0.5em 1.5em;
     box-shadow:rgb(0,0,0) 10px 11px 10px;
     -moz-box-shadow:rgb(0,0,0) 10px 11px 10px;
     -webkit-box-shadow:rgb(0,0,0) 10px 11px 10px;
   }
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  .container,
+  .parrafo {
+    width:960px;
+    margin: 0.5em auto;
   }
+  .container{
+    display: flex;
+    flex-wrap: wrap; 
+    place-content: center;
+    gap:1.5em;
+  }
+
   .h1fotos{
     font: 1.5em solid verdana, sans-serif;
     -moz-font: 1.5em solid verdana, sans-serif;
@@ -64,22 +68,10 @@
     -webkit-font: 0.9em solid verdana, sans-serif; 
   }
   .imagenesfooter {
-    width: 970px;
-    margin: 0 auto;
-    -moz-width: 970px;
-    -webkit-width: 970px;
-    
+    display:flex;
+    justify-content: space-evenly; 
   }
-  .video {
-    position: absolute;
-    top:97px;
-    box-shadow:rgb(0,0,0) 10px 10px 10px;
-    margin-left:0.5em;
-  }
-  .parrafo {
-    width: 960px;
-    text-align: center; 
-  }
+
   .imagenesfooter img {
     width: 8.5em;
     border-radius: 2em;
@@ -87,7 +79,7 @@
     -webkit-width:8.5em;
     -moz-border-radius: 2em;
     -webkit-border-radius: 2em;
-    margin-bottom:1em ;
+    margin:1em 1em;
     
   }
   .tulipan{
@@ -106,7 +98,8 @@
   .tqm,
   .mensajefooter,
   .parrafo,
-  .h1fotos{
+  .h1fotos,
+  .cabecerah1{
     text-shadow:rgb(0,0,0) 10px 10px 10px;
     -moz-text-shadow:rgb(0,0,0) 10px 10px 10px;
     -webkit-text-shadow:rgb(0,0,0) 10px 10px 10px
