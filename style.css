@@ -10,7 +10,7 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    min-width:660px;
+    min-width:420px;
   }
   .agrupar {
     background-image: url("imagenes_hbdy/fondoh1header.jfif");
@@ -32,14 +32,15 @@
     margin: 0.5em 0;
   }
   .foto img {
-    width: 12vw;
-    height: 25vh;
+    width: 220px;
+    height: 220px;
     border-radius: 1.5em;
     box-shadow:rgb(0,0,0) 10px 11px 10px;
     -moz-box-shadow:rgb(0,0,0) 10px 11px 10px;
     -webkit-box-shadow:rgb(0,0,0) 10px 11px 10px;
     margin: 1em 0.5em;
   }
+
   .container{
     display: inline-block;
     column-count: 5; 
@@ -107,11 +108,10 @@
   /* MEDIA */
 
   
-  @media only screen and (max-width:1500px){
+  @media only screen and (max-width:1300px){
     .foto img{
-      width: 15vw;
-      height: 25vh;
-      border-radius: 1em;
+      width: 200px;
+      border-radius: 1.5em;
     }
     .container{
       column-count: 4;
@@ -121,30 +121,29 @@
       border-radius: 2em;
     }
     *{
-      font-size:20px;
-    }
-    .parrafo{
-      width:850px;
-      margin: 0 auto;
+      font-size:18px;
     }
   }
-  @media only screen and (max-width:1007px){
+
+  @media only screen and (max-width:1000px){
+    *{
+      font-size:16px;
+    }
+  }
+
+  @media only screen and (max-width:720px){
     .foto img{
-      width: 19vw;
-      height: 25vh;
-      border-radius: 2em;
+      width: 180px;
+      border-radius: 1em;
     }
     .imagenesfooter img {
       border-radius: 0.5em;
     }
     *{
-      font-size:18px;
+      font-size:14px;
     }
     .container{
       column-count: 3;
     }
-    .parrafo{
-      width:600px;
-      margin: 0 auto;
-    }
+
 }
