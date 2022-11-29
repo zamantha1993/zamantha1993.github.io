@@ -32,8 +32,8 @@
     margin: 0.5em 0;
   }
   .foto img {
-    width: 221px;
-    height: 220px;
+    width: 12vw;
+    height: 40vh;
     border-radius: 1.5em;
     box-shadow:rgb(0,0,0) 10px 11px 10px;
     -moz-box-shadow:rgb(0,0,0) 10px 11px 10px;
@@ -106,10 +106,11 @@
 
   /* MEDIA */
 
+  
   @media only screen and (max-width:1500px){
     .foto img{
-      width: 200px;
-      height: 200px;
+      width: 15vw;
+      height: 40vh;
       border-radius: 1em;
     }
     .container{
@@ -129,13 +130,12 @@
   }
   @media only screen and (max-width:1007px){
     .foto img{
-      width: 180px;
-      height: 180px;
-      border-radius: 1em;
+      width: 19vw;
+      height: 40vh;
+      border-radius: 2em;
     }
     .imagenesfooter img {
-      width: 5em;
-      border-radius: 2em;
+      border-radius: 0.5em;
     }
     *{
       font-size:18px;
