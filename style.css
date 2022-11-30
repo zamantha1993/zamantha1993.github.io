@@ -38,12 +38,16 @@
     box-shadow:rgb(0,0,0) 10px 11px 10px;
     -moz-box-shadow:rgb(0,0,0) 10px 11px 10px;
     -webkit-box-shadow:rgb(0,0,0) 10px 11px 10px;
-    margin: 1em 0.5em;
+    margin: 1em 0.5em;    
   }
 
   .container{
-    display: inline-block;
-    column-count: 5; 
+    display:flex;
+    flex-wrap: wrap;
+    width:90%;
+    gap:1em;
+    place-content: center;
+    margin:0 auto;
   }
 
   .h1fotos{
@@ -63,22 +67,20 @@
     -webkit-font: 0.9em solid verdana, sans-serif; 
   }
   .parrafo{
-    width:960px;
-    margin: 0 auto;
+    padding: 0 50px;
   }
-
   .imagenesfooter {
     display:flex;
     justify-content: space-evenly; 
   }
 
   .imagenesfooter img {
-    width: 8.5em;
-    border-radius: 2em;
-    -moz-width:8.5em;
-    -webkit-width:8.5em;
-    -moz-border-radius: 2em;
-    -webkit-border-radius: 2em;
+    width: 8.5vw;
+    border-radius: 1em;
+    -moz-width:8.5vw;
+    -webkit-width:8.5vw;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
     margin:1em 1em;
     
   }
@@ -109,41 +111,22 @@
 
   
   @media only screen and (max-width:1300px){
-    .foto img{
-      width: 200px;
-      border-radius: 1.5em;
-    }
-    .container{
-      column-count: 4;
-    }
     .imagenesfooter img {
-      width: 7em;
-      border-radius: 2em;
+      width:11vw;
+      border-radius: 0.5em;
     }
     *{
       font-size:18px;
     }
   }
 
-  @media only screen and (max-width:1000px){
+  @media only screen and (max-width:720px){
+    .imagenesfooter img {
+      width:12.5vw;
+      border-radius: 0.4em;
+    }
     *{
       font-size:16px;
-    }
-  }
-
-  @media only screen and (max-width:720px){
-    .foto img{
-      width: 180px;
-      border-radius: 1em;
-    }
-    .imagenesfooter img {
-      border-radius: 0.5em;
-    }
-    *{
-      font-size:14px;
-    }
-    .container{
-      column-count: 3;
     }
 
 }
