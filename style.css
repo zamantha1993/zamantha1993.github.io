@@ -125,9 +125,6 @@
       height:120px;
       border-radius:1em;
     }
-    .parrafo::after{
-      content:"estoy en el 1007px"
-    }
   }
   @media only screen and (max-width:720px){
     .imagenesfooter img {
@@ -142,9 +139,6 @@
       width:80px;
       height:100px;
       border-radius:0.7em;
-    }
-    .parrafo::after{
-      content:"estoy en el 720px"
     }
 }
 
